@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+.tbody{
+    border-radius: 5px;
+    border: 1px solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wid{
+    padding: 5px;
+}
+img{
+    position: relative;
+    top: 4px;
+    left: 20px;
+    width: 15px;
+}
+input[type="text"],
+input[type="number"]{
+    border-radius: 5px;
+    border: 1px #b90c0c solid;
+    height: 25px;
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    width: 100%;
+    text-align: center;
+    background-color: #e3e3e3;
+    color: #080808;
+    padding: 10px 0;
+}
+.container{
+    margin: 0 auto;
+    width: 96%;
+    max-width: 800px;
+}
+.table{
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+.th{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    font-family: cursive,fantasy,Arial, Helvetica, sans-serif;
+}
+.item.header{
+    background-color: #0c0cb2;
+    color: #f7f7f7;
+}
+.item.header p{
+    font-weight: bold;
+}
+.item,.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    border: 1px solid #08080833;
+    margin: 6px 0px;
+    background-color: #e3e3e3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item p{
+    padding: 8px 2px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #08080833;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item .delete{
+    background-color: #b90c0c;
+    color: #e3e3e3;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
 }
-
-.App-link {
-  color: #61dafb;
+.item .delete:hover{
+    opacity: 0.8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+form *{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #08080833;
+    padding: 2px 4px;
+    font-size: 16px
+}
+form input[type="text"], form input[type="number"]{
+    outline: none;
+    background-color: #e3e3e3;
+}
+form input[type="submit"]{
+    font-weight: bold;
+    background-color: #0cb90c;
+    color: #e3e3e3;
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+form input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.text{
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #08080833;
+}
+.delete{
+    background-color: #b90c0c;
+    font-size: larger;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.add{
+    background-color: #0cb90c;
+    font-size: larger;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    color: white;
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.h1{
+    width: 100%;
+    background-color: #b90c0c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.td{
+    font-size: larger;
+    
+    font-weight: bolder;
+    border-bottom:1px solid black ;
+    border-right:1px solid black ;
 }
